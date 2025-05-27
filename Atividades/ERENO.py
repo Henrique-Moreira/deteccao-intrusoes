@@ -91,7 +91,7 @@ plt.show()
 
 explainer   = shap.Explainer(model)
 shap_values = explainer(X_test)
-shap.summary_p
+shap.summary_plot(shap_values, X_test, plot_type="bar", max_display=20)
 
 # ------------------ 9. Validação Cruzada ------------------
 
